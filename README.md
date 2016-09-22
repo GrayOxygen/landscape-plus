@@ -6,16 +6,16 @@
 
 ## 主题特色
 
-+ **主题配置项优化**，你可以将主题配置项放在站点的`_config.yml`中，避免主题更新造成的冲突。
-+ **移除Google库**，改用cloudflare的CDN，加快页面显示速度。
 + **新增多语言支持**，支持英文、中文简体和中文繁体。
-+ **新增友情链接模块**，已默认开启，修改方法看下面的[常见问题](#常见问题)。
++ **新增友情链接模块**，已默认开启，修改方法看下面的[FAQs](#faqs)。
 + **新增百度分享模块**，已默认开启。
-+ **新增多说评论模块**，开启方法看下面的[常见问题](#常见问题)。
++ **新增多说评论模块**，开启方法看下面的[FAQs](#faqs)，仍支持Disqus。
 + **新增mathjax模块**，即latex数学公式的支持，默认关闭。（感谢 @Svtter 的[pull request](https://github.com/xiangming/landscape-plus/pull/35)）
 + **新增IE8支持**。
++ **新增Monokai代码高亮配色**，最流行、最优雅的代码高亮配色方案。
++ **移除Google库**，改用国内可以访问的CDN，加快页面显示速度。
 + **外观美化**，美化了部分外观样式。
-+ **使用Monokai代码高亮配色**，最流行、最优雅的代码高亮配色方案。
++ **主题配置项优化**，你可以将主题配置项放在站点的`_config.yml`中，避免主题更新造成的冲突。
 
 主题还在扩展中，欢迎各种**Pull Request**。
 
@@ -25,14 +25,19 @@
 + [启用](#enable)
 + [配置](#config)
 + [更新](#update)
-+ [常见问题](#troubleshoots)
++ [FAQs](#faqs)
 + [更新日志](#logs)
 + [网站列表](#sites)
 + [贡献者们](#contribute)
 
 ## <a name='install'>安装</a>
 
+从[**release页面**](https://github.com/xiangming/landscape-plus/releases)下载，然后解压到hexo的themes目录下。
+
+或者直接拉取最新版：（可能会存在bug，不建议新手尝试）
+
 ```bash
+# 在hexo根目录下执行
 git clone https://github.com/xiangming/landscape-plus.git themes/landscape-plus
 ```
 
@@ -74,8 +79,9 @@ widgets:
 
 # Links
 links:
-  主题作者: http://xiguabaobao.com
+  主题作者: http://arvinxiang.com
   热前端: http://reqianduan.com
+  远程.work: http://yuancheng.work
 
 # Miscellaneous
 google_analytics:
@@ -85,8 +91,9 @@ google_plus:
 fb_admins:
 fb_app_id:
 
-# Duoshuo
-duoshuo_shortname:
+# Comment system
+duoshuo_shortname: your_shortname
+disqus_shortname: your_shortname
 
 # Baidu share
 baidushare: true
@@ -108,7 +115,7 @@ git pull
 
 **提示** 如果更新发生错误，你可以删除整个主题文件夹，然后重新执行[安装](#install)操作。
 
-## <a name='troubleshoots'>常见问题</a>
+## <a name='faqs'>FAQs</a>
 
 **问**：**怎么使用landscape plus主题？**
 > 按照上方的步骤进行`安装`、`启用`。
